@@ -4,6 +4,7 @@
     <router-link to="/aboutJP">ホームについて</router-link>
     <br>
     <button class="logout" @click="Logout">ロッグアウト</button>
+    <router-link to="/">English</router-link>
   </div>
 </template>
 
