@@ -14,10 +14,14 @@
 
       onBeforeMount(() => {
         firebase.auth().onAuthStateChanged((user) => {
-          if (!user) {
+          if (!user && (route.path=='/' || route.path=='/about')) {
             router.replace('/login');
+          } else if (!user && (route.path=='/JP' || route.path=='/aboutJP')) {
+          	router.replace('/loginJP');
           } else if (route.path=='/login' || route.path=='/register') {
             router.replace('/');
+          } else if (route.path=='/loginJP' || route.path=='/registerJP') {
+          	router.replace('/JP');
           }
         });
       });

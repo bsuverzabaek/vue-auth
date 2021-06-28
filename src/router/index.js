@@ -8,9 +8,19 @@ const routes = [
     component: Home
   },
   {
+    path: '/JP',
+    name: 'HomeJP',
+    component: () => import('../views/HomeJP.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import('../views/About.vue')
+  },
+  {
+    path: '/aboutJP',
+    name: 'AboutJP',
+    component: () => import('../views/AboutJP.vue')
   },
   {
     path: '/login',
@@ -18,9 +28,19 @@ const routes = [
     component: () => import('../views/Login.vue')
   },
   {
+    path: '/loginJP',
+    name: 'LoginJP',
+    component: () => import('../views/LoginJP.vue')
+  },
+  {
     path: '/register',
     name: 'Register',
     component: () => import('../views/Register.vue')
+  },
+  {
+    path: '/registerJP',
+    name: 'RegisterJP',
+    component: () => import('../views/RegisterJP.vue')
   }
 ]
 

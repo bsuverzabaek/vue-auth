@@ -1,12 +1,12 @@
 <template>
 	<div class="register">
-		<h1>Register</h1>
-		<router-link to="/registerJP">日本語</router-link>
+		<h1>作成する</h1>
+		<router-link to="/register">English</router-link>
 		<form @submit.prevent="Register">
-			<input type="text" placeholder="Email" v-model="email" />
-			<input type="password" placeholder="Password" v-model="password" />
+			<input type="text" placeholder="メールアドレス" v-model="email" />
+			<input type="password" placeholder="パスワード" v-model="password" />
 			<input type="submit" value="Register" />
-			<p>Have an account? <router-link to="/login">Login Here</router-link></p>
+			<p>アカウントもうある? <router-link to="/loginJP">ここにロッグイン</router-link></p>
 		</form>
 	</div>
 </template>
